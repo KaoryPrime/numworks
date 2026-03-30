@@ -5,6 +5,7 @@ def menu():
     print("3. Annuites")
     print("4. Emprunts Indivis")
     print("5. Utilitaire dates")
+    print("6. Enonces exercices")
     print("0. Quitter")
     return int(input("Choix: "))
 
@@ -27,3 +28,6 @@ while True:
     elif c == 5: 
         from outils import util_dates
         util_dates()
+    elif c == 6: 
+        from enonces import enonces
+        enonces()
