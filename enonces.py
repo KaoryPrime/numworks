@@ -9,10 +9,6 @@ def exo(t, lines):
         print(l)
     pg()
 
-# ========================================
-# FICHE 1 : INTERETS SIMPLES
-# ========================================
-
 def f1_exo1():
     exo("F1 Exo1: Agios decouverts", [
         "Suite a un decouvert bancaire",
@@ -178,10 +174,6 @@ def f1_exo14():
         "c) Cout de l'operation?",
         "d) Taux reel (TEG)?",
     ])
-
-# ========================================
-# FICHE 2 : INTERETS COMPOSES
-# ========================================
 
 def f2_exo1():
     exo("F2 Exo1: IC vs IS", [
@@ -361,10 +353,6 @@ def f2_exo17():
         "   d'investir que non?",
     ])
 
-# ========================================
-# FICHE 3 : ANNUITES
-# ========================================
-
 def f3_exo1():
     exo("F3 Exo1: Capital annuites", [
         "Versements annuels constants",
@@ -477,10 +465,6 @@ def f3_exo9():
         "pour le vendeur?",
     ])
 
-# ========================================
-# FICHE 4 : EMPRUNTS INDIVIS
-# ========================================
-
 def f4_exo1():
     exo("F4 Exo1: Annuites non std", [
         "Emprunt annee 0: 10 000 EUR",
@@ -551,10 +535,6 @@ def f4_exo6():
         "Taux prop si pret immo",
         "Taux equiv si pret conso",
     ])
-
-# ========================================
-# MENUS
-# ========================================
 
 def menu_f1():
     print("-- F1: INTERETS SIMPLES --")

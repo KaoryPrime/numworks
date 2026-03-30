@@ -174,6 +174,7 @@ def menu_emp():
     print("7. Emprunt avec decalage")
     print("8. TEG (frais + assurance)")
     print("9. Taux equiv / proportionnels")
+    print("10. Annuites egales dates spec.")
     print("0. Retour")
     return int(input("Choix: "))
 
@@ -317,6 +318,22 @@ def emp_taux_ep():
         print("Annuel prop  =", round(ts*k*100,6), "%")
         print("Annuel equiv =", round(((1+ts)**k-1)*100,6), "%")
 
+def emp_annuites_dates():
+    print("-- Annuites egales dates specif. --")
+    C0 = saisir("Capital C0: ")
+    i  = saisir("Taux par periode i: ")
+    n  = int(input("Nb versements egaux: "))
+    dates = []
+    for k in range(n):
+        d = saisir("Date versement " + str(k+1) + ": ")
+        dates.append(d)
+    T = max(dates)
+    s = sum((1+i)**(T-d) for d in dates)
+    a = C0*(1+i)**T / s
+    print("Annuite a =", round(a, 4))
+    print("Total verse =", round(a*n, 4))
+    print("Cout =", round(a*n - C0, 4))
+
 def fiche4():
     while True:
         c = menu_emp()
@@ -330,3 +347,4 @@ def fiche4():
         elif c == 7: emp_decalage()
         elif c == 8: emp_teg()
         elif c == 9: emp_taux_ep()
+        elif c == 10: emp_annuites_dates()
