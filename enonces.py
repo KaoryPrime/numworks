@@ -121,11 +121,15 @@ def f1_exo11():
     exo("F1 Exo11: Cpte epargne", [
         "Mouvements sur un compte",
         "d'epargne a 2,5%:",
-        " 5 jan: depot 5 000 EUR",
+        " 5 jan: avoir 5 000 EUR",
         " 8 mars: retrait 4 000 EUR",
-        " 1 avril: depot 800 EUR",
+        " 18 mars: versement 800 EUR",
     ])
     exo("F1 Exo11 suite", [
+        " 22 mai: retrait 1 500 EUR",
+        " 6 juin: versement 1 000 EUR",
+        " 7 juil: retrait 1 000 EUR",
+        "",
         "Quelle somme reste-t-il",
         "sur le compte le 2 sept",
         "si les interets sont",
@@ -410,20 +414,26 @@ def f3_exo4():
 
 def f3_exo5():
     exo("F3 Exo5: Timeline annuite", [
-        "Timeline avec un capital",
-        "en date 0 et des annuites.",
+        "Achat d'un bien: 350 000 EUR",
+        "Acompte date 0: 100 000 EUR",
+        "Solde finance par 8",
+        "annuites constantes (= a)",
+        "de date 2 a date 9.",
+        "Taux: 5%.",
         "Calculer le montant de",
         "chacune de ces annuites.",
     ])
 
 def f3_exo6():
     exo("F3 Exo6: Timeline taux", [
-        "Timeline avec annuites",
-        "et valeur acquise.",
+        "Constitution compte retraite:",
+        "18 versements de 10 000 EUR",
+        "(dates 1 a 18).",
+        "Objectif: 300 000 EUR",
+        "en date 18.",
         "Quel est le taux de",
         "capitalisation (ou de",
-        "rentabilite) de",
-        "l'operation realisee?",
+        "rentabilite)?",
     ])
 
 def f3_exo7():
