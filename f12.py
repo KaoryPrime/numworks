@@ -10,6 +10,7 @@ def menu_is():
     print("5. Escompte commercial complet")
     print("6. Livret A (quinzaines)")
     print("7. Compte epargne mouvements")
+    print("8. Deux capitaux (systeme)")
     print("0. Retour")
     return int(input("Choix: "))
 
@@ -128,6 +129,24 @@ def compte_epargne():
     solde += I
     print("Solde final =", round(solde, 2))
 
+def is_deux_capitaux():
+    print("-- Deux capitaux IS --")
+    print("C1 - C2 = diff_capital")
+    print("I2 - I1 = diff_interet")
+    diff_cap = saisir("Difference capitaux (C1-C2): ")
+    i1 = saisir("Taux i1 (1er capital): ")
+    i2 = saisir("Taux i2 (2nd capital): ")
+    n, base = choisir_duree()
+    diff_int = saisir("Difference interets (I2-I1): ")
+    r1 = i1 * n / base
+    r2 = i2 * n / base
+    C2 = (diff_int + diff_cap * r1) / (r2 - r1)
+    C1 = C2 + diff_cap
+    print("C1 =", round(C1, 4))
+    print("C2 =", round(C2, 4))
+    print("I1 =", round(C1 * r1, 4))
+    print("I2 =", round(C2 * r2, 4))
+
 def fiche1():
     while True:
         c = menu_is()
@@ -139,6 +158,7 @@ def fiche1():
         elif c == 5: is_escompte()
         elif c == 6: livret_a()
         elif c == 7: compte_epargne()
+        elif c == 8: is_deux_capitaux()
 
 def menu_ic():
     print("-- INTERETS COMPOSES --")

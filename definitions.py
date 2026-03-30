@@ -9,10 +9,6 @@ def afficher(titre, lignes):
         print(l)
     pg()
 
-# ========================================
-# DEFINITIONS
-# ========================================
-
 def d_interet_simple():
     afficher("INTERET SIMPLE", [
         "Remuneration d'un capital",
@@ -288,10 +284,6 @@ def d_in_fine():
         "Annuites 1 a n-1: C0 x i",
         "Derniere annuite: C0 x i + C0",
     ])
-
-# ========================================
-# MENU
-# ========================================
 
 def definitions():
     defs = [
